@@ -19,14 +19,15 @@
 # include <stdint.h>
 # include <unistd.h>
 # include <limits.h>
-# include "ft_printf.h"
+
+# include "ft_print.h" 
 # include "get_next_line_bonus.h"
 
 typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
-}					t_list;
+}					t_stack;
 
 size_t	ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);
