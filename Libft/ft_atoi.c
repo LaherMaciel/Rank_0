@@ -34,7 +34,7 @@ size_t	ft_atoi(const char *str)
 		sign = new_sign(str, i, sign);
 		i++;
 	}
-	while (str[i] >= '0' && str[i] <= '9')
+	while (ft_isdigit(str[i]))
 	{
 		c = (c * 10) + (str[i++] - '0');
 		if (c == 922337203685477580 && str[i] >= 7)
